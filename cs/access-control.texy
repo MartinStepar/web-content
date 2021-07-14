@@ -469,7 +469,7 @@ Souběžně je možné v rámci jednoho webu a jedné session mít několik nez�
 $user->getStorage()->setNamespace('backend');
 ```
 
-Je důležité pamatovat na to, abychom jmenný prostor nastavili vždy na všech místech patřících do dané části. Pakliže používáme presentery, nastavíme jmenný prostor ve společném předkovi pro danou část - obvykle BasePresenter. Učiníme tak rozšířením metody [checkRequirements() |api:Nette\Application\UI\Presenter::checkRequirements()]:
+Je důležité pamatovat na to, abychom jmenný prostor nastavili vždy na všech místech patřících do dané části. Pakliže používáme presentery, nastavíme jmenný prostor ve společném předkovi pro danou část - obvykle BasePresenter. Učiníme tak rozšířením metody [checkRequirements() |api:Nette\Application\UI\Component::checkRequirements()]:
 
 ```php
 public function checkRequirements($element): void
